@@ -76,28 +76,10 @@ body {
       pointer-events: none !important;
   }
   
-  /* Table-based Footer - Disabled*/
-        .notion-collection-table__wrapper {
-        display:none;
-  }
-  /* Custom Footer in <body> - Enabled */
-        .footer {
-        /* display:none; */
-  }
-  /* Newsletter in Footer - Enabled */
-        .newsletter {
-        /*display:none;*/
-  }
+
   
 
 
-  /* Hide Notion Toggle - hack to hide content on pages. Drag into toggle. */
-  /* If you want to use toggles, replace .notion-toggle with #block-[your block id] */
-  
-  .notion-toggle {
-      display: none !important;
-  }
-  
   /* Currently Baby Yoda 😀 - if you want a custom photo to replace "Content" database, insert below. Check out [insert_your_domain]/content to preview */
   
   #page-content h1:after {
@@ -117,26 +99,19 @@ body {
     overflow-x: hidden!important;
   } 
   
-  @media only screen and (max-width:900px) {
+@media only screen and (max-width:900px) {
      body {
        background-image:none !important;
      }
   }
   
-  /* Custom gradient in Options */
+ 
   
-  body {
-  /* 	background: linear-gradient(165deg, #FAFAFA 30%, #FFF 0%); */
-  }
+
   
-  :root {
-      --transition: all .2s ease-in-out!important;
-      --transition-alt: all 0.8s cubic-bezier(0.2, 1, 0.2, 1) !important;
-      --color-text-gray: #808c99!important;
-      --rounded: 8px!important;
-  }
+
   
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
       :root {
           --column-spacing: 30px !important;
           --navbar-height-scrolled: 80px !important;
@@ -147,25 +122,12 @@ body {
       }
   }
   
-  html {
-      min-height: 100%;
-      position: relative;
-  }
-  
-  .super-content.max-width {
-      max-width: 1000px !important;
-      margin-bottom: min(200px,20%) !important;
-  }
-  
-  .footer.super-content.max-width {
-      margin-bottom:0px !important;
-  }
   
   div img {
     object-fit:cover !important;
   }
   
-  @media (max-width: 900px) { 
+@media (max-width: 900px) { 
       .super-content {
           padding-right: var(--padding-right) !important;
           padding-left: var(--padding-left) !important;
@@ -180,8 +142,7 @@ body {
           margin: 0 auto !important;
     }
   }
-  
-    @media (min-device-width:320px) and (max-device-width:768px) {
+@media (min-device-width:320px) and (max-device-width:768px) {
       .super-content {
           padding-right: var(--padding-iphone-right) !important;
           padding-left: var(--padding-iphone-left) !important;
@@ -195,10 +156,8 @@ body {
           max-width: 1600px !important;
           margin: 0 auto !important;
     }
-  }
-  
-  
-  @media (max-width:480px) {
+  } 
+@media (max-width:480px) {
     .super-content.max-width {
         margin-bottom: 0px;
         padding-bottom: 30vh !important;
@@ -214,27 +173,14 @@ body {
     }
   }
   
-  h1.notion-header__title {
-      padding: 0px;
-  }
-  
-  h2 {
-      font-weight: 500 !important;
-  }
+
   
   .notion-header__content.no-cover.no-icon.max-width,
   .notion-header__content.has-cover.no-icon.max-width {
       max-width: 1000px;
   }
   
-  .notion-page__icon {
-      display: none !important;
-  }
-  
-  .notion-divider {
-      border-bottom: 1px solid rgb(55 53 47 / 18%) !important;
-  }
-  
+
   .notion-page__title .notion-semantic-string {
       border-bottom: none !important;
   }
@@ -242,6 +188,11 @@ body {
   .notion-image.page-width>div {
       height: auto !important;
   }
+
+
+
+
+
   
   /* Child page headers - do not touch */
   
@@ -407,7 +358,7 @@ body {
   .notion-collection-card {
       transition: all .3s ease !important;
       box-shadow: none !important;
-      background:transparent !important;
+      background: transparent !important;
   }
   
   .notion-collection-card:hover {

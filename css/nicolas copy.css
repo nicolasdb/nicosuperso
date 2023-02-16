@@ -1,0 +1,238 @@
+
+
+html {
+    min-height: 100%;
+    position: relative;
+  }
+
+
+  * {
+    -webkit-font-smoothing: antialiased !important;
+    text-rendering: optimizeSpeed !important;
+    outline: none !important;
+    border: none !important;
+  }
+
+/* ⌈-----᚜ .super-navbar ᚛-----⌉ */
+  /* Must enable in Super first */
+.super-navbar.simple {
+  background-color: transparent !important;
+  max-width: 1000px;
+  margin: auto;
+  }
+
+  
+  
+/* ⌊_________ /ᐠ｡ꞈ｡ᐟ\ _________⌋ */
+
+  
+
+/* ⌈-----᚜    body     ᚛-----⌉ */
+
+body {
+  height: 100%;
+  overflow: auto;
+  background: linear-gradient(165deg, #f8f8f8 33%, #ffff 0%);
+  }
+.notion-header {
+  margin: 100px 0 10px 0 !important;
+  }
+.notion-navbar,
+.notion-collection__header,
+.notion-property__title__icon-wrapper,
+.notion-header__cover.no-cover {
+  display: none !important;
+  }
+.notion-toggle {    /* Hide Toggle */
+  display: none !important;
+  }
+.notion-divider {
+  border-bottom: 1px solid rgb(55 53 47 / 18%) !important;
+  }
+
+
+.notion-page__icon {  /* Hide page Icon */
+/*   display: none !important;*/  
+  }
+
+
+.super-content.max-width {
+  max-width: 1000px !important;
+  margin-bottom: min(10px,10%) !important;
+  }
+h1.notion-header__title { /* Child page headers - do not touch */
+  font-size: 2em !important;
+  }
+h2 {
+  font-weight: 550 !important;
+  }
+  /* Size all page titles on main pages */
+[id*="index"] h1.notion-header__title{
+    font-size: 4em !important;
+  [id*="about"] h1.notion-header__title,
+  [id*="portfolio"] h1.notion-header__title,
+  [id*="posts"] h1.notion-header__title,
+  [id*="recommendations"] h1.notion-header__title,
+  [id*="downloads"] h1.notion-header__title,
+  }
+  
+
+/* ⌊_________ /ᐠ｡ꞈ｡ᐟ\ _________⌋ */
+
+/*****************************/
+  /* Global Gallery */
+  /* Effects index, portfolio, posts, recommendations, downloads */
+/*****************************/
+  
+  .notion-collection__header,
+  .notion-collection-card__content,
+ {
+      display: none !important;
+  }
+  
+.notion-collection-card {
+  transition: all 0.1s ease !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  }
+.notion-collection-card .notion-property__title {
+  padding-left:5px !important;
+  font-size:1em !important;
+  padding-top: 0px !important;
+  color: var(--color-text-default);
+  }
+.notion-collection-gallery {
+  grid-gap:10px 40px !important;
+  border: none !important;
+  grid-template-columns: repeat(auto-fill, minmax(var(--collection-card-cover-size-medium), 1fr))!important;
+  }
+.notion-collection-gallery .notion-collection-card img {
+  transform: scale(1.0) !important;
+  transition: all 0.1s ease-in-out !important;
+  }
+  
+.notion-collection-card:hover {
+  transform: scale(1.01) !important;
+  }
+.notion-collection-gallery .notion-collection-card:hover {
+  cursor: pointer;
+  }
+
+
+  .notion-collection-card__cover,
+  .notion-collection-card__cover span,
+  .notion-collection-card__cover img {
+      max-height: 200px !important;
+      overflow: hidden !important;
+      height: 200px !important;
+  }
+  
+/*****************************/
+  /* Global Post Lists */
+/*****************************/
+  /* Hides icon */
+.notion-property__title .notion-property__title__icon-wrapper {
+  display: none !important;
+  }
+  /* Set spacing between posts */
+.notion-collection-list {
+  display: block !important;
+  max-width: 100% !important;
+  border-top: 0 !important;
+  }
+.notion-collection-list__item {
+  padding: 0 !important;
+  margin: 1em 0 1em 0 !important;
+  border-radius: 0 !important;
+  display: block !important;
+  }
+
+
+
+  /* Restyle meta data of each article in the list */
+.notion-collection-list__item-property {
+  padding: 0 !important;
+  }
+.notion-collection-list__item-property .notion-semantic-string {
+  white-space: pre	 !important;
+  }
+.notion-collection-list__item-content,
+.notion-collection-list__item-property .notion-property__select {
+  display: block !important;
+  }
+.notion-property__title {
+  display: block !important;
+  }
+  
+
+
+
+  /* Resets font size of date */
+/*.notion-collection-list__item-property .notion-property__date {
+  font-size: rem !important;
+  }*/
+  /* Resets spacing and padding on date */
+/*.notion-collection-list__item-property .notion-property__date .notion-semantic-string {
+  min-height: auto !important;
+  padding: 0 !important;
+  }*/
+  /* Set color and size of date */
+/*.notion-collection-list__item-property .notion-property__date .notion-semantic-string .date {
+  color: var(--color-text-gray) !important;
+  font-size: 0.875rem !important;
+  }*/
+
+
+
+/*#################################*/
+/* ⌈-----᚜     footer     ᚛-----⌉ */
+  /* Table-based Footer - Disabled*/
+.notion-collection-table__wrapper {
+  display:none;
+  }
+  /* Custom Footer in <body> - Enabled */
+.footer {
+  /* display:none; */
+  }
+.footer.super-content.max-width {
+  margin-bottom:0px !important;
+  }
+/*****************************/
+  /* Custom footer html injection Super body */
+/*****************************/
+.footer {
+  padding-bottom: 0px !important;
+  }
+.footer-copy {
+  margin-bottom: 30px;
+  font-size: .8rem !important;
+  position: absolute;
+  bottom: 0px;
+  max-width: 1000px;
+  }
+.footer-line {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  }
+.social-icons a.nav-link {
+  padding-left: 0.1em;
+  }
+.footer .nav-link {
+  color: var(--color-text-default);
+  transition: var(--transition);
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  }
+.footer .nav-link:hover {
+  opacity: 0.6;
+  }
+  
+@media (max-width:414px) {
+  .footer.super-content.max-width {
+    padding-bottom: 0 !important;
+    margin-bottom:0px !important;
+    }
+  }
+  
+/* ⌊__________ /ᐠ｡ꞈ｡ᐟ\ __________⌋ */
