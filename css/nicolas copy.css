@@ -69,9 +69,10 @@ h1.notion-header__title { /* Child page headers - do not touch */
 h2 {
   font-weight: 550 !important;
   }
+
+
   /* Size all page titles on main pages */
-[id*="index"] h1.notion-header__title{
-    font-size: 4em !important;
+[id*="index"] h1.notion-header__title{     font-size: 4em !important; 
   [id*="about"] h1.notion-header__title,
   [id*="portfolio"] h1.notion-header__title,
   [id*="posts"] h1.notion-header__title,
@@ -80,6 +81,14 @@ h2 {
   }
   
 
+/* Size all page titles on main pages */ 
+[id="index"] h1.notion-header__title{ font-size: 4em !important; } 
+[id*="about"] h1.notion-header__title, 
+[id*="portfolio"] h1.notion-header__title, 
+[id*="posts"] h1.notion-header__title, 
+[id*="recommendations"] h1.notion-header__title, 
+[id*="downloads"] h1.notion-header__title, 
+
 /* ⌊_________ /ᐠ｡ꞈ｡ᐟ\ _________⌋ */
 
 /*****************************/
@@ -87,9 +96,7 @@ h2 {
   /* Effects index, portfolio, posts, recommendations, downloads */
 /*****************************/
   
-  .notion-collection__header,
-  .notion-collection-card__content,
- {
+  .notion-collection__header .notion-collection-card__content {
       display: none !important;
   }
   

@@ -1,0 +1,92 @@
+
+/*#################################*/
+/* ⌈-----᚜     General     ᚛-----⌉ */
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+* {
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeSpeed !important;
+  outline: none !important;
+  /*border: none !important;*/
+}
+
+.notion-toggle {    /* Hide Toggle */
+display: none !important;
+}
+
+
+
+/*#################################*/
+/* ⌈-----᚜ .super-navbar ᚛-----⌉ */
+/* Must enable in Super first */
+.super-navbar.simple {
+background-color: transparent !important;
+max-width: 800px;
+margin: auto;
+}
+
+
+/*#################################*/
+/* ⌈-----᚜ titles ᚛-----⌉ */
+[id*="contact"] .notion-header__title     
+{
+     display: none !important;
+ } 
+
+
+
+/*#################################*/
+/* ⌈-----᚜     footer     ᚛-----⌉ */
+/* Table-based Footer - Disabled*/
+.notion-collection-table__wrapper {
+display:none;
+}
+/* Custom Footer in <body> - Enabled */
+.footer {
+/* display:none; */
+}
+.footer.super-content.max-width {
+margin-bottom:0px !important;
+}
+/*****************************/
+/* Custom footer html injection Super body */
+/*****************************/
+.footer {
+padding-bottom: 0px !important;
+}
+.footer-copy {
+margin-bottom: 30px;
+font-size: .8rem !important;
+position: absolute;
+bottom: 0px;
+max-width: 1000px;
+}
+.footer-line {
+padding-top: 6px !important;
+padding-bottom: 6px !important;
+}
+.social-icons a.nav-link {
+padding-left: 0.1em;
+}
+.footer .nav-link {
+color: var(--color-text-default);
+transition: var(--transition);
+text-decoration: none;
+padding: 12px 20px;
+font-size: 16px;
+}
+.footer .nav-link:hover {
+opacity: 0.6;
+}
+
+@media (max-width:414px) {
+.footer.super-content.max-width {
+  padding-bottom: 0 !important;
+  margin-bottom:0px !important;
+  }
+}
+
+/* ⌊__________ /ᐠ｡ꞈ｡ᐟ\ __________⌋ */
